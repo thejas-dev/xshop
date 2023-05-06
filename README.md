@@ -1,38 +1,123 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<!-- Please update value in the {}  -->
 
-## Getting Started
+<h1 align="center">Authenticate-page</h1>
 
-First, run the development server:
+<div align="center">
+   Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
+</div>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+<div align="center">
+  <h3>
+    <a href="https://authenticate-page-frontend.vercel.app/">
+      XShop
+    </a>
+    <span> | </span>
+    <a href="https://github.com/thejas-dev/xshop.git">
+      Git
+    </a>
+    <span> | </span>
+    <a href="https://devchallenges.io/challenges/mGd5VpbO4JnzU6I9l96x">
+      Challenge
+    </a>
+  </h3>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Built With](#built-with)
+- [Features](#features)
+- [How to use](#how-to-use)
+- [Contact](#contact)
+
+<!-- OVERVIEW -->
+
+## Overview
+
+![screenshot](https://ik.imagekit.io/d3kzbpbila/thejashari_3BXlaGJgK)
+
+
+- This project was done as a part of full stack development project by devchallenges.io, a simple e commerce web page where user can login and regsiter a new account using their email. After creating a account users can add items listed there into their cart and complete the purchase or cancel it also.
+
+- Supports gmail acccount login in which user can select a google account stored in his device for authentication which does not require password.
+
+- User can update the items in shop by providing product's name, note, image url and category.
+
+
+### Built With
+
+<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
+
+- [React](https://reactjs.org/)
+- [Next.js](https://nextjs.org/)
+- [Tailwind](https://tailwindcss.com/)
+
+## Features
+
+<!-- List the features of your application or follow the template. Don't share the figma file here :) -->
+
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/mGd5VpbO4JnzU6I9l96x) was to build an application to complete the given user stories.
+
+User Stories are :- 
+1) When I select the items tab, I can see a list of items under different categories.
+2) I can add a new item with name, category, note, and image.
+3) When I add a new item, I can select one from the existing categories or add a new one if the category does not exist.
+4) When I select an item, I can see its details and I can choose to add the current list or delete the item.
+5) I can add items to the current list
+6) I can increase the number of item in the list
+7) I can remove the item from the list
+8) I can save/update the list with a name (user can have only one active list at a time)
+9) I can toggle between editing state and completing state
+10) When I am at completing state, I can save my progress by selecting the item
+11) I can cancel the active list
+12) When I try to cancel a list, I can see a confirmation notification
+13) I can see my shopping history and I can see the details of it
+14) I can see some statistics: top items, top categories, and monthly comparison. (Tips: use libraries like recharts for the graph)
+15) (optional) I can search for items
+
+The features are :-
+
+~~ Login with just a tap ~~
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1)Light weight site
+2)Login/Register with google account
+3)Edit items in grocery store with required details of product
+4)Select a item and add it to cart
+5)See the images and other details of a item
+6)Search for a item 
+7)Increase/Decrease/Delete a item in cart
+8)Cancel the items in the cart
+9)Complete the cart to place order
+10)Can check the history of orders
+11)Add a item to store by providing required details
+12)Top items and top categories chart and analytics
+13)Check history with timeline & timestamp
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
+## How To Use
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+<!-- Example: -->
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. Environment Variables needed to run the application, if you wish to get the environment variables mailMe at thejaskala308@gmail.com
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+From your command line:
 
-## Learn More
+```bash
+# Clone this repository
+$ git clone https://github.com/thejas-dev/xshop.git
 
-To learn more about Next.js, take a look at the following resources:
+# Install dependencies
+$ npm install
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Run the app
+$ npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Contact
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Website [https://xshop.vercel.app/](https://xshop.vercel.app/)
+- GitHub [@your-username](https://github.com/thejas-dev)
+- Twitter [@your-twitter](https://twitter.com/hari_thejas)
