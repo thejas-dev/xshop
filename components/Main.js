@@ -22,7 +22,7 @@ export default function Main({providers}) {
 
 
 	return (
-		<div className="bg-[#fafafe] flex w-full h-screen">
+		<div className="bg-[#fafafe] flex w-full h-[100%]">
 			<div className={`fixed ${cancelReveal ? 'opacity-100 z-50' : 'opacity-0 z-[-1]'} h-screen transition-all w-full
 			duration-300 ease-in bg-[#000000]/20 flex items-center justify-center`}>
 				<div className="bg-[#FFFFFF] md:p-7 md:pt-4 p-3 pt-2 pl-3 md:pl-7 rounded-2xl">

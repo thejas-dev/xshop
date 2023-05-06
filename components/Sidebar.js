@@ -64,7 +64,7 @@ export default function Sidebar({id,setListReveal,listReveal,count,setCount,menu
   },[showLogin])
 
 	return(
-		<div className="h-screen bg-[#FFFFFF] md:w-[6%] w-[14%] flex flex-col items-center justify-between">
+		<div className="h-[100vh] bg-[#FFFFFF] md:w-[6%] w-[14%] flex flex-col items-center justify-between">
 			<div className="p-2 box-content flex items-center justify-center mt-5 relative">
 				<div 
 				id="loginnoti"
@@ -101,7 +101,7 @@ export default function Sidebar({id,setListReveal,listReveal,count,setCount,menu
 					<MdOutlineInsertChart className="h-6 w-6 text-[#454545] select-none"/>
 				</div>
 			</div>
-			<div className="w-full flex items-center justify-center mb-7">
+			<div className="w-full flex items-center justify-center mb-7 ">
 				<div className="p-2 box-border rounded-full bg-[#F9A109] flex items-center justify-center cursor-pointer relative">
 					<div className="absolute -top-[14px] h-6 w-6 flex items-center justify-center -right-2 bg-red-500 text-[#FFFFFF] rounded-full">
 						<h1 id="countnum" className="text-sm text-[#FFFFFF]">{count}</h1>

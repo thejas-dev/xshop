@@ -4,7 +4,7 @@ import {useRouter} from 'next/navigation';
 
 export default function Home() {
   return (
-    <div className="min-h-screen w-full">
+    <div className="h-screen w-full">
       <Main/>
     </div>
   )

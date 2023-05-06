@@ -334,7 +334,7 @@ export default function List({setListReveal,listReveal,intermediateList,setInter
 
 
 	return (
-		<div className={`md:w-[28%] w-[86%] fixed ${listReveal ? "right-0" : "-right-[100%] md:right-0" } transition-all duration-300 ease-in h-screen z-35 ${revealItem || addItem ? "bg-[#FFFFFF]": "bg-[#FFF0DE]"}  md:block`}>
+		<div className={`md:w-[28%] w-[86%] fixed ${listReveal ? "right-0" : "-right-[100%] md:right-0" } transition-all duration-300 ease-in h-full z-35 ${revealItem || addItem ? "bg-[#FFFFFF]": "bg-[#FFF0DE]"}  md:block`}>
 			{
 				revealItem ? 
 
@@ -532,7 +532,8 @@ export default function List({setListReveal,listReveal,intermediateList,setInter
 				</motion.span>
 			}
 
-			<div className={`md:h-[17%] h-[13.8%] bg-[#FFFFFF] ${revealItem || addItem && 'border-t-[2px] rounded-md'} border-gray-200/70 relative w-full px-7 md:py-6 py-7 flex`}>
+			<div className={`md:h-[17%] h-[13.8%] bg-[#FFFFFF] ${(revealItem || addItem) && 'border-t-[2px] rounded-md'} 
+			border-gray-200/70 relative w-full px-7 md:py-6 py-5 flex`}>
 				{
 					revealItem ? 
 					<div className="w-full flex gap-5 items-center justify-center">
@@ -555,9 +556,10 @@ export default function List({setListReveal,listReveal,intermediateList,setInter
 					!catArray.length > 0 && !addItem &&
 					<img src="undraw_shopping_app_flsj 1.svg" alt = "" className="absolute h-[200px] w-[200px] bottom-[85px] left-0 mx-auto right-0	"/>
 					}
-					<div id="save-container" className={`w-full  rounded-xl border-[2px] overflow-hidden ${catArray.length > 0 ? "border-[#F9A109]" : "border-[#C1C1C4]"} flex transition-all duration-200 ease-out`}>
+					<div id="save-container" className={`w-full  rounded-xl border-[2px] overflow-hidden 
+						${catArray.length > 0 ? "border-[#F9A109]" : "border-[#C1C1C4]"} flex transition-all duration-200 ease-out`}>
 						<input type="text" placeholder="Enter a name" value={newListName} onChange={(e)=>setNewListName(e.target.value)}
-						className="bg-transparent text-md font-quicksand m-3 outline-none w-full placeholder-[#BDBDBD]"/>
+						className="bg-transparent text-md font-quicksand md:m-3 mx-3 my-0 outline-none w-full placeholder-[#BDBDBD]"/>
 						<button onClick={()=>{
 							if(catArray.length > 0 && newListName.length > 0){
 								setListName(newListName);
@@ -581,7 +583,7 @@ export default function List({setListReveal,listReveal,intermediateList,setInter
 						className="px-2 py-3 bg-transparent text-[#34333A] font-semibold">Cancel</button>
 						<button 
 						onClick={saveEdit}
-						className="px-5 font-semibold py-4 bg-[#56CCF2] text-[#FFFFFF] rounded-xl">Add</button>
+						className="px-5 font-semibold md:py-4 py-2 bg-[#56CCF2] text-[#FFFFFF] rounded-xl">Add</button>
 					</div>
 					</>
 				}
