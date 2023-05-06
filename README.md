@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://authenticate-page-frontend.vercel.app/">
+    <a href="https://xershop.vercel.app/">
       XShop
     </a>
     <span> | </span>
@@ -36,7 +36,7 @@
 
 ## Overview
 
-![screenshot](https://ik.imagekit.io/d3kzbpbila/thejashari_3BXlaGJgK)
+![screenshot](https://ik.imagekit.io/d3kzbpbila/thejashari_QXgIomJi8)
 
 
 - This project was done as a part of full stack development project by devchallenges.io, a simple e commerce web page where user can login and regsiter a new account using their email. After creating a account users can add items listed there into their cart and complete the purchase or cancel it also.
@@ -118,6 +118,6 @@ $ npm start
 
 ## Contact
 
-- Website [https://xshop.vercel.app/](https://xshop.vercel.app/)
+- Website [https://xershop.vercel.app/](https://xershop.vercel.app/)
 - GitHub [@your-username](https://github.com/thejas-dev)
 - Twitter [@your-twitter](https://twitter.com/hari_thejas)
