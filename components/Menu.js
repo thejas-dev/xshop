@@ -219,7 +219,7 @@ export default function Menu({intermediateList,setIntermediateList,listReveal,
 				</div>
 				:
 				searchCatArray?.map((cat,i)=>(
-					<div className={`flex flex-col mt-12 ${searchCatArray.length === i+1 && "mb-10"}`}>
+					<div key={i} className={`flex flex-col mt-12 ${searchCatArray.length === i+1 && "mb-10"}`}>
 						<h1 className="text-xl text-[#000000] font-semibold">{cat}</h1>
 						<div className="grid grid-cols-2 md:grid-cols-4 gap-4">
 							{
@@ -228,6 +228,7 @@ export default function Menu({intermediateList,setIntermediateList,listReveal,
 									{
 										list.category === cat &&
 										<motion.div
+										key={j}
 										initial={{
 											opacity:0,
 											scale:0.6
@@ -266,15 +267,16 @@ export default function Menu({intermediateList,setIntermediateList,listReveal,
 				))
 				:
 				catArray?.map((cat,i)=>(
-					<div className={`flex flex-col mt-12 ${catArray.length === i+1 && "mb-14"}`}>
+					<div key={i} className={`flex flex-col mt-12 ${catArray.length === i+1 && "mb-14"}`}>
 						<h1 className="text-xl text-[#000000] font-semibold">{cat}</h1>
 						<div className="grid grid-cols-2 md:grid-cols-4 gap-4">
 							{
-								allListArray?.map((list)=>(
+								allListArray?.map((list,j)=>(
 									<>
 									{
 										list.category === cat &&
 										<motion.div 
+										key={j}
 										initial={{
 											opacity:0,
 											scale:0.8
@@ -331,7 +333,7 @@ export default function Menu({intermediateList,setIntermediateList,listReveal,
 					<div className="mt-7 flex flex-col gap-9">
 						{
 							historyCatArray.map((histcat,i)=>(
-								<div className={`flex flex-col ${historyCatArray.length === i+1 && "mb-10"}`}>
+								<div key={i} className={`flex flex-col ${historyCatArray.length === i+1 && "mb-10"}`}>
 									<h1 className="text-[#000000] font-semibold text-xl">
 										{histcat}
 									</h1>
@@ -341,6 +343,7 @@ export default function Menu({intermediateList,setIntermediateList,listReveal,
 												if(hist.category === histcat){
 													return (
 														<div 
+														key={j}
 														onClick={()=>{
 															setIntermediateItem(hist);
 															setListReveal(true);
@@ -378,7 +381,7 @@ export default function Menu({intermediateList,setIntermediateList,listReveal,
 				<div className="mt-7 mb-7 flex flex-col gap-5">
 					{
 						months.slice(0).reverse().map((monthOf,i)=>(
-							<div className={`flex flex-col mt-5 ${i !==0 &&  "border-t-[1px]"} pt-3 border-gray-200 w-full`}>
+							<div key={i} className={`flex flex-col mt-5 ${i !==0 &&  "border-t-[1px]"} pt-3 border-gray-200 w-full`}>
 								<h1 className="text-md text-[#000000] font-semibold">{monthOf}</h1>
 								<div className="mt-4 flex flex-col w-full gap-8">
 								{
@@ -386,6 +389,7 @@ export default function Menu({intermediateList,setIntermediateList,listReveal,
 										if(hist.month === monthOf){									
 											return (
 												<motion.div 
+												key={j}
 												initial={{
 													opacity:0,
 												}}
@@ -452,8 +456,8 @@ export default function Menu({intermediateList,setIntermediateList,listReveal,
 						<h1 className="md:text-2xl text-xl font-semibold text-[#000000]">Top items</h1>
 						<div className="mt-3 flex flex-col">
 							{
-								topItems.map((top)=>(
-									<div className="mt-7 flex-col flex w-full">
+								topItems.map((top,i)=>(
+									<div key={i} className="mt-7 flex-col flex w-full">
 										<div className="flex justify-between w-full">
 											<h1 className="text-lg text-[#000000] font-quicksand">{top.name}</h1>
 											<h1 className="text-lg text-[#000000] font-medium">{top.percent}%</h1>
@@ -486,8 +490,8 @@ export default function Menu({intermediateList,setIntermediateList,listReveal,
 						<h1 className="md:text-2xl text-xl font-semibold text-[#000000]">Top Categories</h1>
 						<div className="mt-3 flex flex-col">
 							{
-								topCategories.map((top)=>(
-									<div className="mt-7 flex-col flex w-full">
+								topCategories.map((top,j)=>(
+									<div key={j} className="mt-7 flex-col flex w-full">
 										<div className="flex justify-between w-full">
 											<h1 className="text-lg text-[#000000] font-quicksand">{top.name}</h1>
 											<h1 className="text-lg text-[#000000] font-medium">{top.percent}%</h1>

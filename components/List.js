@@ -423,8 +423,8 @@ export default function List({setListReveal,listReveal,intermediateList,setInter
 					</div>
 					<div className="mt-2 rounded-2xl bg-[#FFFFFF] flex flex-col p-1 border-[1px] border-gray-200 shadow-md">
 						{
-							catForContainer.map((cat)=>(
-								<div 
+							catForContainer.map((cat,i)=>(
+								<div key={i}
 								onClick={()=>{setCategory(cat)}}
 								className={`rounded-xl ${cat===category ? 'text-[#FFFFFF] bg-[#F9A109]' : 'hover:bg-gray-200/70 hover:text-[#000000] text-gray-400' }  transition-all duration-100 
 								ease-in  px-7 py-3`}>
@@ -462,7 +462,7 @@ export default function List({setListReveal,listReveal,intermediateList,setInter
 					<img src="source.svg" alt="not found" className="h-30 w-30 -top-5 absolute left-0"/>
 					<div className="w-[40%] h-full"/>
 					<div className="w-[60%] h-full">
-						<h1 className="text-lg text-[#FFFFFF] font-semibold">Didn't find what you need?</h1>
+						<h1 className="text-lg text-[#FFFFFF] font-semibold">Didn&apos;t find what you need?</h1>
 						<button 
 						onClick={()=>{setAddItem(true);changeSettingsToAdd()}}
 						className="bg-[#FFFFFF] mt-2 py-2 px-5 text-[#34333A] font-semibold rounded-xl">Add item</button>
